@@ -1,2 +1,2 @@
-# Learning-to-rank-for-patient-prioritization
+# Learning-to-rank-for-patient-prioritisation
 MSc research project
