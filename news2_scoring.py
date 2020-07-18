@@ -2,13 +2,10 @@ import pandas as pd
 import numpy as np
 
 col_list = ['hadm_id', 'vent', 'resprate_mean', 'tempc_mean', 'sysbp_mean', 'heartrate_mean', 'spo2_mean']
-news_data = pd.read_csv('C:/Users/Cathal Holloway/OneDrive - University of '
-                        'Birmingham/Masters/module7datastuff/unscaled_ltr_data.csv', 'r', delimiter=',',
-                        usecols=col_list)
+news_data = pd.read_csv('unscaled_ltr_data.csv', 'r', delimiter=',', usecols=col_list)
 
 col_list = ['hadm_id', 'mingcs']
-gcs = pd.read_csv("C:/Users/Cathal Holloway/OneDrive - University of Birmingham/Masters/module7datastuff/views/gcsfirstday.csv",
-                  'r', usecols=col_list, delimiter=',')
+gcs = pd.read_csv("gcsfirstday.csv", 'r', usecols=col_list, delimiter=',')
 
 gcs = gcs.groupby('hadm_id').mean()
 
