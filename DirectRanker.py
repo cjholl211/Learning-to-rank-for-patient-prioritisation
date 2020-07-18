@@ -3,9 +3,7 @@ import tensorflow as tf
 import pickle
 from sklearn.base import BaseEstimator
 from sklearn.model_selection import train_test_split
-
 from dr_helpers import nDCG_cls
-
 import time
 
 
